@@ -78,9 +78,9 @@ function HomeView({ onStart }: { onStart: () => void }) {
         <Heart className="w-16 h-16 text-pink-400 fill-pink-400/20" strokeWidth={1.5} />
       </motion.div>
       
-      <h1 className="text-5xl md:text-7xl font-serif mb-4 tracking-tight">Mom,</h1>
+      <h1 className="text-5xl md:text-7xl font-serif mb-4 tracking-tight">Mummy</h1>
       <p className="text-xl text-pink-200/80 mb-12 font-light max-w-sm">
-        I've put together a few of our favorite memories just for you.
+        Thank you so much for supporting and guiding me in right path . And Sorry for sometime irritating you .
       </p>
 
       <motion.button
