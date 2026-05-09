@@ -89,7 +89,7 @@ function HomeView({ onStart }: { onStart: () => void }) {
         className="flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-pink-600 to-rose-600 rounded-full text-xl font-bold shadow-[0_0_40px_rgba(219,39,119,0.3)]"
       >
         <Mail className="w-6 h-6" />
-        Open Your Memories
+        Open It With Smile
       </motion.button>
     </motion.div>
   );
@@ -142,7 +142,7 @@ function GridView({ revealedIds, onReveal, onZoom, onBack }: any) {
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-20 text-center pb-20">
           <Sparkles className="w-8 h-8 text-yellow-400 mx-auto mb-4" />
           <p className="text-3xl font-serif italic text-white leading-relaxed">
-            "No matter how much I grow up, <br/> I will always be your little boy."
+            "It doesn't matter how much I grow , <br/> I will always be your little boy!"
           </p>
           <p className="mt-4 text-pink-300 font-light">— Love you, Mom!</p>
         </motion.div>
