@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Plus+Jakarta+Sans:wght@400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --color-primary: #780037;
+  --color-primary-container: #9d174d;
+  --color-on-primary-container: #ffafc2;
+  --color-primary-fixed: #ffd9e0;
+  --color-surface: #fdf9ee;
+  --color-surface-container-low: #f7f3e8;
+  --color-surface-container: #f1eee3;
+  --color-on-surface: #1c1c15;
+  --color-on-surface-variant: #574146;
+  --color-outline: #8b7076;
+  --color-outline-variant: #debfc4;
+  --color-secondary-fixed: #f1dde9;
+  --color-champagne-gold: #f7e7ce;
+
+  --animate-gradient-shift: gradientShift 15s ease infinite;
+  --animate-pulse-glow: pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 3s ease-in-out infinite;
+
+  @keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  @keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 15px rgba(247, 231, 206, 0.3); }
+    50% { box-shadow: 0 0 30px rgba(247, 231, 206, 0.6); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.bg-animated-gradient {
+  background: linear-gradient(-45deg, #780037, #ffd9e0, #af275a, #9d174d);
+  background-size: 400% 400%;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
